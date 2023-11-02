@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders users when API call succeeds 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gtsqUy dUhiaT"
+  >
+    <div
+      class="sc-hKFymg iQaxrS"
+      columns="5"
+    >
+      <div
+        class="sc-dlniIP dKGwVR"
+      >
+        <img
+          class="sc-eCAqax bPzBCX"
+          src="pokeapi_256.png"
+        />
+        <img
+          class="sc-eCAqax bPzBCX"
+          src="bulbasur.png"
+          style="width: 250px;"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-hKFymg iQaxqI"
+      columns="7"
+    >
+      <table
+        class="sc-bdnyFh CUoeZ"
+      >
+        <tbody>
+          <tr>
+            <td>
+              bulbasaur
+            </td>
+            <td>
+              <img
+                class="sc-eCAqax dGuNbV"
+                height="20"
+                src="pokeball.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              ivysaur
+            </td>
+            <td>
+              <img
+                class="sc-eCAqax dGuNbV"
+                height="20"
+                src="pokeball.png"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App snapshot should be the same 1`] = `
+<div
+  className="sc-gtsqUy dUhiaT"
+>
+  <div
+    className="sc-hKFymg iQaxrS"
+    columns={5}
+  >
+    <div
+      className="sc-dlniIP dKGwVR"
+    >
+      <img
+        className="sc-eCAqax bPzBCX"
+        src="pokeapi_256.png"
+      />
+      <img
+        className="sc-eCAqax bPzBCX"
+        src="bulbasur.png"
+        style={
+          Object {
+            "width": 250,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="sc-hKFymg iQaxqI"
+    columns={7}
+  >
+    <table
+      className="sc-bdnyFh CUoeZ"
+    >
+      <tbody />
+    </table>
+  </div>
+</div>
+`;
+
+exports[`snapshot should be the same 1`] = `
+<div
+  className="sc-gtsqUy dUhiaT"
+>
+  <div
+    className="sc-hKFymg iQaxrS"
+    columns={5}
+  >
+    <div
+      className="sc-dlniIP dKGwVR"
+    >
+      <img
+        className="sc-eCAqax bPzBCX"
+        src="pokeapi_256.png"
+      />
+      <img
+        className="sc-eCAqax bPzBCX"
+        src="bulbasur.png"
+        style={
+          Object {
+            "width": 250,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="sc-hKFymg iQaxqI"
+    columns={7}
+  >
+    <table
+      className="sc-bdnyFh CUoeZ"
+    >
+      <tbody />
+    </table>
+  </div>
+</div>
+`;
