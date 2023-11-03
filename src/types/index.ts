@@ -14,7 +14,7 @@ export interface pokemonProps {
 }
 
 export type state = {
-    example:{
+    PokemonDataList:{
         data:{name:string, url:string}[]
     }
 }
@@ -27,3 +27,30 @@ export interface ITableProps
     onChangeImage: (imgUrl:string) => void 
 }
 
+
+// Detail Component
+
+export type DetailPokemon = {
+    types: {
+        type:{
+            name:string
+        }
+    }[],
+    order: number,
+    name: string,
+    height: number, 
+    weight: number, 
+    stats: [],
+    abilities: []
+    sprites: {front_default:string}
+}
+
+export interface IDetailPokemonFetch {
+    data: DetailPokemon
+}
+
+export interface IDetailPokemon {
+    detail:{
+        data: DetailPokemon
+    }
+}

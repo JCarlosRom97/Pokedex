@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`detail renders users when API call succeeds 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gtsqUy gBKKFr"
+  >
+    <div
+      class="sc-hKFymg iQaxsz"
+      columns="4"
+    >
+      <img
+        class="sc-eCAqax wBXbV"
+        src="pokeapi_256.png"
+      />
+      <img
+        class="sc-eCAqax dvdsnT"
+        height="300"
+        paddingtop="100"
+      />
+    </div>
+    <div
+      class="sc-jSFipO iEmTfo"
+    >
+      <a
+        class="sc-gKAaef gHRchn"
+        href="/"
+      >
+        Back
+      </a>
+      <p
+        align="center"
+        class="sc-iCoHzw cHtrZT"
+      >
+        Type
+      </p>
+      <div
+        class="sc-fujznN coqLWd"
+      >
+        <div
+          class="sc-pNWRh bRebpx"
+          rows="3"
+        >
+          <p
+            align="center"
+            class="sc-iCoHzw cHtrZT"
+          >
+            Number: 
+          </p>
+        </div>
+        <div
+          class="sc-pNWRh bRebpx"
+          rows="3"
+        >
+          <p
+            align="center"
+            class="sc-iCoHzw cHtrZT"
+          >
+            Name: 
+          </p>
+        </div>
+        <div
+          class="sc-pNWRh bRebpx"
+          rows="3"
+        >
+          <p
+            align="center"
+            class="sc-iCoHzw cHtrZT"
+          >
+            Height: 
+          </p>
+        </div>
+        <div
+          class="sc-pNWRh bRebpx"
+          rows="3"
+        >
+          <p
+            align="center"
+            class="sc-iCoHzw cHtrZT"
+          >
+            Weigth: 
+          </p>
+        </div>
+      </div>
+      <p
+        align="left"
+        class="sc-iCoHzw gezCdT"
+      >
+        Stats
+      </p>
+      <div
+        class="sc-fujznN coqLWd"
+      >
+        <div
+          class="sc-pNWRh bRebrs"
+          rows="6"
+        />
+        <div
+          class="sc-pNWRh bRebsC"
+          rows="4"
+        >
+          <p
+            align="center"
+            class="sc-iCoHzw cHtrZT"
+          >
+            Abilities
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`detail snapshot should be the same 1`] = `
+<div
+  className="sc-gtsqUy gBKKFr"
+>
+  <div
+    className="sc-hKFymg iQaxsz"
+    columns={4}
+  >
+    <img
+      className="sc-eCAqax wBXbV"
+      src="pokeapi_256.png"
+    />
+    <img
+      className="sc-eCAqax dvdsnT"
+      height={300}
+      paddingtop={100}
+    />
+  </div>
+  <div
+    className="sc-jSFipO iEmTfo"
+  >
+    <a
+      className="sc-gKAaef gHRchn"
+      href="/"
+      onClick={[Function]}
+    >
+      Back
+    </a>
+    <p
+      align="center"
+      className="sc-iCoHzw cHtrZT"
+    >
+      Type
+    </p>
+    <div
+      className="sc-fujznN coqLWd"
+    >
+      <div
+        className="sc-pNWRh bRebpx"
+        rows={3}
+      >
+        <p
+          align="center"
+          className="sc-iCoHzw cHtrZT"
+        >
+          Number: 
+        </p>
+      </div>
+      <div
+        className="sc-pNWRh bRebpx"
+        rows={3}
+      >
+        <p
+          align="center"
+          className="sc-iCoHzw cHtrZT"
+        >
+          Name: 
+        </p>
+      </div>
+      <div
+        className="sc-pNWRh bRebpx"
+        rows={3}
+      >
+        <p
+          align="center"
+          className="sc-iCoHzw cHtrZT"
+        >
+          Height: 
+        </p>
+      </div>
+      <div
+        className="sc-pNWRh bRebpx"
+        rows={3}
+      >
+        <p
+          align="center"
+          className="sc-iCoHzw cHtrZT"
+        >
+          Weigth: 
+        </p>
+      </div>
+    </div>
+    <p
+      align="left"
+      className="sc-iCoHzw gezCdT"
+    >
+      Stats
+    </p>
+    <div
+      className="sc-fujznN coqLWd"
+    >
+      <div
+        className="sc-pNWRh bRebrs"
+        rows={6}
+      />
+      <div
+        className="sc-pNWRh bRebsC"
+        rows={4}
+      >
+        <p
+          align="center"
+          className="sc-iCoHzw cHtrZT"
+        >
+          Abilities
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

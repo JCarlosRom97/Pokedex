@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const exampleReducer = createSlice({
+export const pokemonData = createSlice({
     name:'reducer',
     initialState:{
         data: []
@@ -14,7 +14,7 @@ export const exampleReducer = createSlice({
     }
 })
 
-export const {add} = exampleReducer.actions;
+export const {add, clean} = pokemonData.actions;
 
-export default exampleReducer.reducer;
+export default pokemonData.reducer;
 

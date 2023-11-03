@@ -3,54 +3,67 @@
 exports[`App renders users when API call succeeds 1`] = `
 <DocumentFragment>
   <div
-    class="sc-gtsqUy dUhiaT"
+    class="sc-hKFymg kpHBGM"
   >
     <div
-      class="sc-hKFymg iQaxrS"
+      class="sc-jSFipO fATsYh"
       columns="5"
     >
       <div
-        class="sc-dlniIP dKGwVR"
+        class="sc-eCAqax jGlwds"
       >
         <img
-          class="sc-eCAqax bPzBCX"
+          class="sc-gKAaef NSRdu"
           src="pokeapi_256.png"
+          width="300"
         />
         <img
-          class="sc-eCAqax bPzBCX"
+          class="sc-gKAaef kBAAMz"
+          height="300"
+          paddingtop="100"
           src="bulbasur.png"
-          style="width: 250px;"
         />
       </div>
     </div>
     <div
-      class="sc-hKFymg iQaxqI"
+      class="sc-jSFipO fATsZr"
       columns="7"
     >
+      <button>
+        Next
+      </button>
       <table
-        class="sc-bdnyFh CUoeZ"
+        class="sc-bdnyFh lbbdiP"
       >
         <tbody>
           <tr>
-            <td>
+            <td
+              class="sc-gtsqUy dlejGb"
+            >
               bulbasaur
             </td>
-            <td>
+            <td
+              class="sc-gtsqUy dlejGb"
+            >
               <img
-                class="sc-eCAqax dGuNbV"
-                height="20"
+                class="sc-gKAaef IrPTC"
+                height="30"
                 src="pokeball.png"
               />
             </td>
           </tr>
           <tr>
-            <td>
+            <td
+              class="sc-gtsqUy dlejGb"
+            >
               ivysaur
             </td>
-            <td>
+            <td
+              class="sc-gtsqUy dlejGb"
+            >
               <img
-                class="sc-eCAqax dGuNbV"
-                height="20"
+                class="sc-gKAaef IrPTC"
+                height="30"
                 src="pokeball.png"
               />
             </td>
@@ -64,75 +77,39 @@ exports[`App renders users when API call succeeds 1`] = `
 
 exports[`App snapshot should be the same 1`] = `
 <div
-  className="sc-gtsqUy dUhiaT"
+  className="sc-hKFymg kpHBGM"
 >
   <div
-    className="sc-hKFymg iQaxrS"
+    className="sc-jSFipO fATsYh"
     columns={5}
   >
     <div
-      className="sc-dlniIP dKGwVR"
+      className="sc-eCAqax jGlwds"
     >
       <img
-        className="sc-eCAqax bPzBCX"
+        className="sc-gKAaef NSRdu"
         src="pokeapi_256.png"
+        width={300}
       />
       <img
-        className="sc-eCAqax bPzBCX"
+        className="sc-gKAaef kBAAMz"
+        height={300}
+        paddingtop={100}
         src="bulbasur.png"
-        style={
-          Object {
-            "width": 250,
-          }
-        }
       />
     </div>
   </div>
   <div
-    className="sc-hKFymg iQaxqI"
+    className="sc-jSFipO fATsZr"
     columns={7}
   >
-    <table
-      className="sc-bdnyFh CUoeZ"
+    <button
+      onClick={[Function]}
     >
-      <tbody />
-    </table>
-  </div>
-</div>
-`;
-
-exports[`snapshot should be the same 1`] = `
-<div
-  className="sc-gtsqUy dUhiaT"
->
-  <div
-    className="sc-hKFymg iQaxrS"
-    columns={5}
-  >
-    <div
-      className="sc-dlniIP dKGwVR"
-    >
-      <img
-        className="sc-eCAqax bPzBCX"
-        src="pokeapi_256.png"
-      />
-      <img
-        className="sc-eCAqax bPzBCX"
-        src="bulbasur.png"
-        style={
-          Object {
-            "width": 250,
-          }
-        }
-      />
-    </div>
-  </div>
-  <div
-    className="sc-hKFymg iQaxqI"
-    columns={7}
-  >
+      Next
+    </button>
     <table
-      className="sc-bdnyFh CUoeZ"
+      className="sc-bdnyFh lbbdiP"
     >
       <tbody />
     </table>

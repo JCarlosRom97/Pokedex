@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import exampleReducer from "./reducers";
+import PokemonReducer from "./reducers/index.reducer";
+import detailReducer from "./reducers/detail.reducer";
 export default configureStore({
     reducer: {
-        example: exampleReducer
+        PokemonDataList: PokemonReducer,
+        detail: detailReducer
     },
 })
 

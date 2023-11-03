@@ -1,4 +1,4 @@
-import Table from "../Components/Table";
+import Table from "../Components/Table/Table";
 import { createEvent, fireEvent, render, waitFor } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 
@@ -27,15 +27,29 @@ describe('Table', () => {
         const buttons = container.getElementsByTagName('tr')
 
         expect(buttons.length).toBe(2)
-        
-        const clickEvent = createEvent(
-            'Click on pokemon record',
-            buttons[0],{
-                detail:1
-            },
-            { EventType: 'CustomEvent' }
 
+        // on click
+        fireEvent(
+            buttons[0],
+            new MouseEvent('click', {
+              bubbles: true,
+              cancelable: true,
+              detail: 1
+            }),
         )
+
+        //double click
+
+        fireEvent(
+            buttons[0],
+            new MouseEvent('click', {
+              bubbles: true,
+              cancelable: true,
+              detail: 2
+            }),
+        )
+
+        
         
     })
 
