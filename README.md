@@ -74,6 +74,11 @@ This section should list any major frameworks/libraries used to this react proje
 This project was mounted in a AWS S3 bucket server
 Link: http://pokedex-interview-density.s3-website.us-east-2.amazonaws.com/
 
+### Testing
+
+I added testing to the project, and I implemented the coverage report:
+
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
