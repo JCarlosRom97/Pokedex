@@ -1,4 +1,6 @@
+import env from "react-dotenv";
 let index = 0;
+const URL = env.POKEMON_API ?? ""
 export const usePaginationUrlGenerator = function () {
 
     function changeIndex(val:number) {
@@ -20,9 +22,9 @@ export const usePaginationUrlGenerator = function () {
   
       value() {
         if(index === 0 || index < 0){
-            return 'https://pokeapi.co/api/v2/pokemon/'
+            return URL
         }else{
-            return `https://pokeapi.co/api/v2/pokemon/?offset=${index}&limit=20`
+            return `${URL}?offset=${index}&limit=20` 
         }
       },
     };
