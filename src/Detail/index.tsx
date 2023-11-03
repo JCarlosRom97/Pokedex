@@ -30,7 +30,7 @@ const PokemonDetail = () =>{
             }))
         }
         getPokemonData()
-    },[])
+    },[dispatch, state])
 
     
     return(

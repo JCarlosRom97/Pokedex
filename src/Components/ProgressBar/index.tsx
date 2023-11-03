@@ -6,7 +6,7 @@ const ProgressBar = ({bgcolor, completed}:{bgcolor:string, completed:number}) =>
 
     useEffect(() => {
         setTimeout(() => setCompleted(completed), 500);
-    }, []);
+    }, [completed]);
 
     return (
         <ProgressBarContainer>
