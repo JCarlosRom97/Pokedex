@@ -63,6 +63,4 @@ describe('App', () => {
     
     })
 
-    test('renders error when API call fails', async () => {})
-
 })

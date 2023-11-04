@@ -131,6 +131,7 @@ describe('detail', () =>{
                 
             }
         });
+        
 
         const {container, asFragment} = render(
             <Provider store={store}>
@@ -140,7 +141,7 @@ describe('detail', () =>{
             </Provider>
         )
 
-        const listNode = await waitFor(() => container.querySelector('div'));
+        const listNode = container.querySelector('div');
         expect(listNode.children).toHaveLength(2); 
     
     })
