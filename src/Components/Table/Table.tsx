@@ -4,14 +4,14 @@ import { pokemonProps, changeImagePokemon } from "../../types";
 import { useNavigate } from "react-router";
 import Pokeball from './../../Images/pokeball.png'
 import { ITableProps } from "../../types";
-import { DataCells, StyledTable } from "./Styles";
+import { StyledUnorderedList, StyledList } from "./Styles";
 import { Image } from "../../Styles";
 
 const Table = ({pokemonData, onChangeImage}:ITableProps) => {
     
     const navigate = useNavigate()
 
-    async function changeImagePokemon({event, url}:changeImagePokemon){
+    async function changeImagePokemon({event, name, url}:changeImagePokemon){
   
         switch(event.detail){
           case 1:{
@@ -20,25 +20,23 @@ const Table = ({pokemonData, onChangeImage}:ITableProps) => {
             break;
           }
           case 2:{
-            navigate('/detail', {state:{url}})
+            navigate(`/detail/${name}`)
             break;
           }
         }
     
       }
     return(
-        <StyledTable>
-        <tbody>
+        <StyledUnorderedList>
+
             {pokemonData.map(({name, url}: pokemonProps)=>(
-              <tr key={url} onClick={(event)=>changeImagePokemon({event, url})} >
-                <DataCells >{name}</DataCells>
-                <DataCells>
-                  <Image src={Pokeball} height={30}/>
-                </DataCells>
-              </tr>
+              <StyledList key={url} onClick={(event)=>changeImagePokemon({event, name, url})} >
+                <div style={{flex:10}} >{name}</div>
+                <div style={{flex:2}} > <Image alt="Pokeball" src={Pokeball} height={30}/></div>
+              </StyledList>
             ))} 
-        </tbody>
-      </StyledTable>
+  
+      </StyledUnorderedList>
     )
 }
 

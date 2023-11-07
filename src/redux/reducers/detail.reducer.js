@@ -10,8 +10,6 @@ export const detailReducer = createSlice({
             state.data = {
                 ...action.payload
             }
-                
-           
         },
     }
 })

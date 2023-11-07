@@ -1,10 +1,13 @@
-let index = 0;
-const URL = "https://pokeapi.co/api/v2/pokemon/"
+var index = 0;
+export const URL = "https://pokeapi.co/api/v2/pokemon/"
 
 export const usePaginationUrlGenerator = function () {
 
     function changeIndex(val:number) {
         index += val;
+        if(index >= 140){
+          index= 150;
+        }
     }
   
     return {
@@ -24,9 +27,10 @@ export const usePaginationUrlGenerator = function () {
         if(index === 0 || index < 0){
             return URL
         }else{
-            return `${URL}?offset=${index}&limit=20` 
+            return `${URL}?offset=${index}&limit=${index >=140 ? 10 :20}` 
         }
       },
     };
   };
+
 

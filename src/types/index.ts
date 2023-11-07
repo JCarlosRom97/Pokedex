@@ -3,8 +3,13 @@ type pokemonStructure = {name:string, url:string}[]
 
 //App.tsx props
 
+export interface IPokemonDataIndex {
+    results:{name:string, url: string}[]
+}
+
 export interface changeImagePokemon {
     event: {detail:number}, 
+    name: string,
     url:string
 }
 
@@ -45,11 +50,8 @@ export type DetailPokemon = {
     sprites: {front_default:string}
 }
 
-export interface IDetailPokemonFetch {
-    data: DetailPokemon
-}
 
-export interface IDetailPokemon {
+export interface IDetailPokemonRedux {
     detail:{
         data: DetailPokemon
     }

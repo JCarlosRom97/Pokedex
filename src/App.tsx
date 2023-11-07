@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { add } from "./redux/reducers/index.reducer";
-import Axios  from "axios";
 import PokemonImage from './Images/pokeapi_256.png'
 import sampleImage from './Images/bulbasur.png'
 import Table from "./Components/Table/Table";
 import { Column, Container, ContainerImages, Image } from "./Styles";
 import { state } from "./types";
 import { usePaginationUrlGenerator } from "./Hooks/paginationUrlGenerator";
+import { IPokemonDataIndex } from "./types";
 
 const App = () => {
   const state = useSelector((state: state) => state.PokemonDataList.data );
@@ -20,10 +20,11 @@ const App = () => {
 
   useEffect(()=>{
     async function getData() {
-      const pokemonData = await Axios.get(indexPagination)
-      dispatch(add(pokemonData.data.results))
+      const data = await fetch(indexPagination)
+      const pokemonData : IPokemonDataIndex = await data.json();
+      dispatch(add(pokemonData.results))
     }
-    getData()
+    getData().catch((error)=> console.error(error))
 
   },[indexPagination])
 
@@ -43,14 +44,14 @@ const App = () => {
     <Container>
       <Column columns={5}>
         <ContainerImages>
-          <Image src={PokemonImage} width={300}/>
-          <Image src={imagePokemon} height={300} paddingtop={100}/>
+          <Image alt="PokeApi" src={PokemonImage} width={300}/>
+          <Image alt="Pokemon Image" src={imagePokemon} height={300} paddingtop={100}/>
         </ContainerImages>
       </Column>
       <Column columns={7}>
+        <Table pokemonData={state} onChangeImage={(imgUrl)=> setImagePokemon(imgUrl)}/>
         {!isFirstPage && (<button onClick={decrementPaginationFunc}>Previous</button>)}
         <button onClick={incrementPaginationFunc}>Next</button>
-        <Table pokemonData={state} onChangeImage={(imgUrl)=> setImagePokemon(imgUrl)}/>
       </Column>
      
     </Container>

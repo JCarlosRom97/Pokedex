@@ -1,12 +1,11 @@
 import React from "react";
-import { IDetailPokemonFetch } from "../../types";
+import { DetailPokemon } from "../../types";
 import { PokemonDataContainer, Text, DataCointainer, Row, BackButton } from "./Styles";
 import ProgressBar from "../ProgressBar";
 
 
 
-const PokemonDetailColumn = ({data} : IDetailPokemonFetch) => {
-    
+const PokemonDetailColumn = ({data} : {data: DetailPokemon}) => {
     return(
         <PokemonDataContainer >
             <BackButton to={"/"}>Back</BackButton>
@@ -17,16 +16,16 @@ const PokemonDetailColumn = ({data} : IDetailPokemonFetch) => {
 
             <DataCointainer>
                 <Row rows={3}>
-                    <Text align="center">Number: {data.order}</Text>
+                    <Text align="center">Number: {data?.order}</Text>
                 </Row>
                 <Row rows={3}>
-                    <Text align="center">Name: {data.name}</Text>
+                    <Text align="center">Name: {data?.name}</Text>
                 </Row>
                 <Row rows={3}>
-                    <Text align="center">Height: {data.height}</Text>
+                    <Text align="center">Height: {data?.height}</Text>
                 </Row>
                 <Row rows={3}>
-                    <Text align="center">Weigth: {data.weight}</Text>
+                    <Text align="center">Weigth: {data?.weight}</Text>
                 </Row>
             </DataCointainer>
             <Text align="left">Stats</Text>
